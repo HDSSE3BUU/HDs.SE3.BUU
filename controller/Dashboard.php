@@ -2,7 +2,13 @@
 require('HDS_Controller.php');
 class Dashboard extends HDS_Controller {
 	function index() {
-		echo "Dashboard controller and Index method";
+		$this->display('dashboard.php', '');
 	}	
+	function problem() {
+		$this->display('problem.php', '');
+	}
+	function suggestion() {
+		$this->display('suggestion.php', '');
+	}
 };
 ?>
